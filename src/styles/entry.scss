@@ -1,7 +1,39 @@
 @import '~normalize.css';
+@import '~slick-slider/slick/slick.css';
+@import 'fonts.scss';
+@import 'variables.scss';
+@import 'header.scss';
+@import 'nav.scss';
+@import 'top-slider.scss';
+@import 'modal.scss';
 
 *,*::after,*::before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  min-width: 320px;
+  max-width: 100%;
+  overflow-x: hidden;
+  font-family: "Century Gothic", sans-serif;
+}
+
+.container {
+  padding: 0 15px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1360px;
+    margin: 0 auto;
+  }
 }
